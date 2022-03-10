@@ -14,11 +14,7 @@ open class LicenseToolsPluginExtension {
 
     var ignoredProjects = emptySet<String>()
 
-    var customStyles = """
-        body{
-        background-color: brown;
-        }
-    """.trimIndent()
+    var customStyles = ""
 
     companion object {
         const val NAME = "licenseTools"

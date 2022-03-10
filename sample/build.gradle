@@ -66,6 +66,12 @@ licenseTools {
     ignoredProjects = [
             'plugin',
     ]
+
+    customStyles = """
+        body{
+        background-color: pink;
+        }
+    """
 }
 
 dependencies {
