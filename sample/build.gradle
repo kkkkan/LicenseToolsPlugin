@@ -1,20 +1,20 @@
 // Tips: Apply license-tools from mavenLocal for debugging
 //
-//buildscript {
-//    repositories {
-//        google()
-//        mavenCentral()
-//        mavenLocal()
-//    }
-//    dependencies {
-//        classpath 'com.cookpad.android.plugin:license-tools:$your_version'
-//    }
-//}
-//apply plugin: 'com.cookpad.android.plugin.license-tools'
-
-plugins {
-    id "com.cookpad.android.plugin.license-tools" version "1.2.8"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.cookpad.android.plugin:plugin:1.2.9'
+    }
 }
+apply plugin: 'com.cookpad.android.plugin.license-tools'
+
+//plugins {
+//    id "com.cookpad.android.plugin.license-tools" version "1.2.8"
+//}
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
