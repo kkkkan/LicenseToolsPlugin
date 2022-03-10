@@ -41,6 +41,7 @@ object GenerateLicensePage {
             throw GradleException("generateLicensePage: more than one library isn't enough information")
         }
 
-        return Templates.wrapWithLayout(licenseHtml)
+        project.logger.error("customStyle "+project.extensions.getByType(LicenseToolsPluginExtension::class.java).customStyles)
+        return Templates.wrapWithLayout(licenseHtml,project.extensions.getByType(LicenseToolsPluginExtension::class.java).customStyles)
     }
 }

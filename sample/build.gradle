@@ -9,6 +9,17 @@ buildscript {
     dependencies {
         classpath 'com.cookpad.android.plugin:plugin:1.2.9'
     }
+//buildscript {
+//    repositories {
+//        google()
+//        mavenCentral()
+//        mavenLocal()
+//    }
+//    dependencies {
+//        classpath 'com.cookpad.android.plugin:license-tools:$your_version'
+//    }
+//}
+//apply plugin: 'com.cookpad.android.plugin.license-tools'
 }
 apply plugin: 'com.cookpad.android.plugin.license-tools'
 
