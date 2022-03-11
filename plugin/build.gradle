@@ -14,6 +14,7 @@ pluginBundle {
     tags = ['android', 'license']
 }
 
+
 gradlePlugin {
     plugins {
         licenseToolsPlugin {
@@ -21,6 +22,20 @@ gradlePlugin {
             displayName = 'LicenseToolsPlugin'
             description = 'Gradle plugin to check library licenses and generate license pages.'
             implementationClass = 'com.cookpad.android.plugin.license.LicenseToolsPlugin'
+        }
+    }
+}
+
+
+// gradlew publishMavenPublicationToMavenLocal
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifactId = 'license-tools'
+            groupId = 'com.cookpad.android.plugin'
+            version = '1.2.9'
+
+            from components.java
         }
     }
 }
