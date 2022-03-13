@@ -7,7 +7,7 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath "com.cookpad.android.plugin:license-tools:1.2.9"
+        classpath "com.cookpad.android.plugin:license-tools:1.2.97"
     }
 //buildscript {
 //    repositories {
@@ -24,7 +24,7 @@ buildscript {
 apply plugin: 'com.cookpad.android.plugin.license-tools'
 
 //plugins {
-//    id "com.cookpad.android.plugin.license-tools" version "1.2.8"
+//    id "com.cookpad.android.plugin.license-tools" version "1.2.96"
 //}
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
@@ -67,11 +67,7 @@ licenseTools {
             'plugin',
     ]
 
-    customStyles = """
-        body{
-        background-color: pink;
-        }
-    """
+    customStyles = file('custom_style.css').text
 }
 
 dependencies {
